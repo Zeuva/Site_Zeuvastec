@@ -120,11 +120,13 @@
       <p>Envie uma mensagem usando o formulário abaixo. Ela será preparada para envio por e-mail para <strong>zeuvastec@gmail.com</strong>.</p>
     </div>
     <div class="contact-form-wrap">
-      <form id="contactForm" class="contact-form">
+      <form id="contactForm" class="contact-form" action="https://formsubmit.co/ajax/zeuvastec@gmail.com" method="POST">
         <label>Seu nome<input id="contactName" name="name" type="text" required placeholder="Nome"></label>
         <label>Seu e-mail<input id="contactEmail" name="email" type="email" required placeholder="voce@exemplo.com"></label>
         <label>Mensagem<textarea id="contactMessage" name="message" rows="6" required placeholder="Escreva sua mensagem..."></textarea></label>
+        <input type="hidden" name="_subject" value="Contato pelo site Zeuvastec Technology">
         <button class="btn" type="submit">Enviar mensagem</button>
+        <div id="contactStatus" class="contact-status" role="status" aria-live="polite"></div>
         <a class="email-link" href="mailto:zeuvastec@gmail.com">Ou envie diretamente para zeuvastec@gmail.com</a>
       </form>
     </div>
