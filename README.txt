@@ -1,0 +1,1 @@
+Site estático Zeuvastec Technology. Abra index.html no navegador ou publique os três arquivos em Vercel/GitHub Pages.
